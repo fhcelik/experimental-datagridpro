@@ -120,7 +120,7 @@ export const CustomizableTable = memo((props) => {
     sortable: false,
     headerClassName: "super-app-theme--header",
     cellClassName: "super-app-theme--cell-header",
-    resizable: false,
+    resizable: true,
     disableReorder: true,
     renderCell: (params) => <CustomGridTreeDataGroupingCell {...params} />,
     renderHeader: (params) => {
