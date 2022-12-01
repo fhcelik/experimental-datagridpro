@@ -1,13 +1,13 @@
 import React, { memo, useState } from "react";
 import { DataContainer, RowButton } from "./styled";
 import {
-  DataGridPro,
+  DataGridPremium,
   useGridApiContext,
   useGridSelector,
   gridFilteredDescendantCountLookupSelector,
   useGridApiRef,
   gridVisibleSortedRowIdsSelector,
-} from "@mui/x-data-grid-pro";
+} from "@mui/x-data-grid-premium";
 import { columns, rows } from "./data";
 import { LicenseInfo } from '@mui/x-license-pro';
 
@@ -18,7 +18,7 @@ export const isNavigationKey = (key) =>
   key.indexOf("Page") === 0 ||
   key === " ";
 
-  LicenseInfo.setLicenseKey('b16d13282f1dc7a7ec33189adf3608bbTz01MTM5OSxFPTE2OTU1Nzk5MDI1ODQsUz1wcm8sTE09c3Vic2NyaXB0aW9uLEtWPTI=');
+  LicenseInfo.setLicenseKey('15928da418dd312d982f97e7569dbda7Tz01NDk4MCxFPTE3MDA5MzU0MjMwNDEsUz1wcmVtaXVtLExNPXN1YnNjcmlwdGlvbixLVj0y');
 const CustomGridTreeDataGroupingCell = (props) => {
   const { id, field, rowNode } = props;
 
@@ -146,7 +146,7 @@ export const CustomizableTable = memo((props) => {
       {editable ? (
         <div />
       ) : (
-        <DataGridPro
+        <DataGridPremium
           columns={columns}
           rows={rows}
           apiRef={apiRef}
