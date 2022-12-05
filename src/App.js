@@ -18,7 +18,7 @@ export const isNavigationKey = (key) =>
   key.indexOf("Page") === 0 ||
   key === " ";
 
-  LicenseInfo.setLicenseKey('15928da418dd312d982f97e7569dbda7Tz01NDk4MCxFPTE3MDA5MzU0MjMwNDEsUz1wcmVtaXVtLExNPXN1YnNjcmlwdGlvbixLVj0y');
+
 const CustomGridTreeDataGroupingCell = (props) => {
   const { id, field, rowNode } = props;
 
